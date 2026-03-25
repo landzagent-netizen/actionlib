@@ -2,7 +2,7 @@
 
 import tempfile
 import os
-from actionlib import actions, execute, list_actions, register
+from actionlib import execute, list_actions, register
 
 
 def test_read_write_file():

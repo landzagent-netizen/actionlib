@@ -5,6 +5,7 @@ from actionlib.core.registry import registry
 #: Main actions dict — import this in your agent
 actions = registry.actions
 
+
 def execute(action_name: str, params: dict) -> any:
     """Execute an action by name with params.
 
@@ -42,5 +43,9 @@ def list_actions() -> dict:
     return registry.list_actions()
 
 
-# Register core IO actions
-from actionlib.actions import io, shell, net, git, text
+# Register core actions (import for side-effect only)
+from actionlib.actions import io as _io  # noqa: E402, F401
+from actionlib.actions import shell as _shell  # noqa: E402, F401
+from actionlib.actions import net as _net  # noqa: E402, F401
+from actionlib.actions import git as _git  # noqa: E402, F401
+from actionlib.actions import text as _text  # noqa: E402, F401

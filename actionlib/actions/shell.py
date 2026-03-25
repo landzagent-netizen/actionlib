@@ -21,7 +21,6 @@ def _run_cmd(cmd: str) -> dict:
 
 def _run_pipe(cmd1: str, cmd2: str) -> str:
     """Pipe cmd1 output into cmd2."""
-    p1 = subprocess.run(cmd1, shell=True, capture_output=True, text=True)
     p2 = subprocess.run(
         f"{cmd1} | {cmd2}",
         shell=True,
