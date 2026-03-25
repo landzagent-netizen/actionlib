@@ -10,7 +10,7 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
 authors = [
-    {name = "landzagent-netizen", email = ""}
+    {name = "landzagent-netizen", email = "landzagent@gmail.com"}
 ]
 classifiers = [
     "License :: OSI Approved :: MIT License",
